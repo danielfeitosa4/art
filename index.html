@@ -10,8 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <!-- CSS do Art -->
   <link rel="stylesheet" href="./css/style.css">
-  <!-- JavaScript Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
@@ -40,10 +38,47 @@
       <div class="main-image-info">
         <h2>Arte no muro de Davi</h2>
         <p class="secondary-color">Realizada em: 20/05/2022</p>
-        <a href="#" class="btn">Detalhes</a>
+        <!-- MODAL -->
+        <button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#modal">Detalhes</button>
       </div>
     </div>
   </div>
+  <!-- CONTAINER MODAL -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Arte Muro de Davi</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/g_1.jpg" alt="" width="100%">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis veniam sunt incidunt, magni saepe eligendi ab ipsum similique aut, modi labore porro tempore! Expedita excepturi, incidunt fugit ducimus cupiditate molestiae!</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda accusantium magni quibusdam quasi impedit illum voluptate possimus eius sequi. Consequuntur, laboriosam vel debitis odit numquam sint placeat officiis voluptates voluptate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL MAIN IMAGE -->
+  <!-- <div class="modal modalPrincipal show" id="modalPrincipal" tabindex="-1" aria-modal="true" role="dialog" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Arte no muro de Davi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <figure>
+                <img src="./images/g_1.jpg" alt="" style="width: 100%;">
+            </figure>
+            <div class="modal-body">
+                <p>Criola pintou em novembro de 2018 o mural Híbrida Astral – Guardiã Brasileira de 1365 m² quadrados na fachada cega do edifício Chiquito Lopes, materializando por meio da arte – segundo palavras da artista – um caminho interno de honra às mulheres e seu sangue sagrado, de honra aos povos originários brasileiros e seus descendentes como legítimos guardiões dos portais da espiritualidade que sustentam o nosso país.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btn-close-muro-davi" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+  </div> -->
   <!-- GALLERY -->
   <div class="container" id="gallery-container">
     <div class="col-12">
@@ -98,5 +133,9 @@
     </div>
     <div class="secondary-color">Art &copy; 2023</div>
   </footer>
+  <!-- Javascript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- Javascript do Art -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
